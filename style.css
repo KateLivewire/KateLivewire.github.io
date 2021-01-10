@@ -1,12 +1,48 @@
 /* CSS files add styling rules to your content */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 
 body {
   font-family: garamond, arial, sans-serif;
   margin: 2em;
+  background-color: #fff
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 50px;
   font-style: regular;
-  color: black;
+  color: #f1aa9b;
+  background-color: white;
+}
+
+nav {
+  width: 100%;
+  height: 200 px;
+  background-color: #96bb7c;
+}
+
+ul {
+}
+
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  float: left;
+  line-height: 200 px;
+}
+
+ul li a {
+  color: green;
+  text-decoration: none;
+  font-size: 14 px;
+  font-family: sans-serif;
+  padding: 0 40px;
+}
+
+ul li a:hover {
+  color: blue;
 }
