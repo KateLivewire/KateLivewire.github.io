@@ -8,7 +8,7 @@
 body {
   font-family: garamond, arial, sans-serif;
   margin: 2em;
-  background-color: #fff
+  background-color: #f1f1f1
 }
 
 h1 {
@@ -18,31 +18,93 @@ h1 {
   background-color: white;
 }
 
-nav {
-  width: 100%;
-  height: 200 px;
-  background-color: #96bb7c;
+.header {
+  padding: 60px; 
+  text-align: center; 
+  background: #1abc9c; 
+  color: white; 
 }
 
-ul {
+.nav {
+  overflow: hidden;
+  background-color: white;
 }
 
-
-ul li {
-  list-style: none;
-  display: inline-block;
+.nav a {
   float: left;
-  line-height: 200 px;
-}
-
-ul li a {
-  color: green;
+  color: #1abc9c;
+  text-align: center;
+  padding: 14px 40px;
   text-decoration: none;
-  font-size: 14 px;
-  font-family: sans-serif;
-  padding: 0 40px;
+  font-size: 20px;
 }
 
-ul li a:hover {
-  color: blue;
+.nav a:hover {
+  background-color: #ddd; 
+  color: black; 
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.side {
+  flex: 30%; 
+  background-color: white; 
+  padding: 20px; 
+}
+
+
+.main {
+  flex: 70%; 
+  background-color: white; 
+  padding: 20px; 
+}
+
+
+
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+.card {
+  background: white;
+  padding: 30px 40px;
+  text-align: left;
+  color: black;
+}
+
+
+.about {
+  background: #eff8ff;
+  padding: 20px 20px;
+  text-align: left;
+  color: black;
+  
+}
+
+
+.footer {
+  padding: 20px; 
+  text-align: left; 
+  background: #f1f1f1 
 }
