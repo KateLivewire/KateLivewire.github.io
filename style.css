@@ -1,4 +1,58 @@
 /* CSS files add styling rules to your content */
+
+@font-face {
+  font-family: Bitter; 
+  src: url("https://cdn.glitch.com/dac22bc7-c89a-41a1-9663-47afdbf17116%2FBitter-VariableFont_wght.ttf?v=1611097695022");
+       url("https://cdn.glitch.com/dac22bc7-c89a-41a1-9663-47afdbf17116%2FBitter-VariableFont_wght.ttf?v=1611097695022") format(ttf),
+}
+
+@font-face {
+  font-family: Bitter-Italic; 
+  src: url("https://cdn.glitch.com/dac22bc7-c89a-41a1-9663-47afdbf17116%2FBitter-Italic-VariableFont_wght.ttf?v=1611099027621");
+       url("https://cdn.glitch.com/dac22bc7-c89a-41a1-9663-47afdbf17116%2FBitter-Italic-VariableFont_wght.ttf?v=1611099027621") format(ttf),
+}
+
+@font-face {
+  font-family: Bitter-Light; 
+  src: url("https://cdn.glitch.com/dac22bc7-c89a-41a1-9663-47afdbf17116%2FBitter-Light.ttf?v=1611113093630");
+       url("https://cdn.glitch.com/dac22bc7-c89a-41a1-9663-47afdbf17116%2FBitter-Light.ttf?v=1611113093630") format(ttf),
+}
+
+@font-face {
+  font-family: Open-Sans; 
+  src: url("https://cdn.glitch.com/dac22bc7-c89a-41a1-9663-47afdbf17116%2FOpenSans-Regular.ttf?v=1611097905041");
+       url("https://cdn.glitch.com/dac22bc7-c89a-41a1-9663-47afdbf17116%2FOpenSans-Regular.ttf?v=1611097905041") format(ttf),
+}
+
+@font-face {
+  font-family: Open-Sans-Italic; 
+  src: url("https://cdn.glitch.com/dac22bc7-c89a-41a1-9663-47afdbf17116%2FOpenSans-Italic.ttf?v=1611097900865");
+       url("https://cdn.glitch.com/dac22bc7-c89a-41a1-9663-47afdbf17116%2FOpenSans-Italic.ttf?v=1611097900865") format(ttf),
+}
+
+@font-face {
+  font-family: Open-Sans-Light; 
+  src: url("https://cdn.glitch.com/dac22bc7-c89a-41a1-9663-47afdbf17116%2FOpenSans-Light.ttf?v=1611111607933");
+       url("https://cdn.glitch.com/dac22bc7-c89a-41a1-9663-47afdbf17116%2FOpenSans-Light.ttf?v=1611111607933") format(ttf),
+}
+
+@font-face {
+  font-family: Montserrat; 
+  src: url("https://cdn.glitch.com/dac22bc7-c89a-41a1-9663-47afdbf17116%2FMontserrat.zip?v=1610963257969");
+       url("https://cdn.glitch.com/dac22bc7-c89a-41a1-9663-47afdbf17116%2FMontserrat.zip?v=1610963257969") format(ttf),
+}
+
+@font-face {
+  font-family: Raleway; 
+  src: url("https://cdn.glitch.com/dac22bc7-c89a-41a1-9663-47afdbf17116%2FRaleway.zip?v=1610963260990");
+       url("https://cdn.glitch.com/dac22bc7-c89a-41a1-9663-47afdbf17116%2FRaleway.zip?v=1610963260990") format(ttf),
+}
+
+
+
+ 
+
+
 * {
   margin: 0;
   padding: 0;
@@ -6,17 +60,31 @@
 
 
 body {
-  font-family: garamond, arial, sans-serif;
+  font-family: Bitter, Bitter-Italic;
   margin: 2em;
-  background-color: #f1f1f1
+  background-color: #fceeeb;
 }
 
 h1 {
+  font-family: Open-Sans;
   font-size: 50px;
   font-style: regular;
   color: #f1aa9b;
   background-color: white;
 }
+
+h2 {
+  font-size: 24px;
+  font-family: Bitter, Bitter-Italic;
+}
+
+h3 {
+  font-family: Bitter-Light;
+  font-size: 24px;
+  font-style: regular
+  padding: 10px;
+}
+
 
 .header {
   padding: 60px; 
@@ -44,6 +112,14 @@ h1 {
   color: black; 
 }
 
+.nav .icon {
+  display: none;
+}
+
+.nav a.active {
+  background-color: #f1aa9b;
+  color: white;
+}
 
 
 * {
@@ -54,21 +130,23 @@ h1 {
 .row {
   display: flex;
   flex-wrap: wrap;
+  background-color: #fceeeb;
 }
 
 
 .side {
-  flex: 30%; 
-  background-color: white; 
+  flex: 20%; 
+  background-color: #fceeeb; 
   padding: 20px; 
 }
 
 
 .main {
-  flex: 70%; 
-  background-color: white; 
+  flex: 80%; 
+  background-color: #fceeeb; 
   padding: 20px; 
 }
+
 
 
 
@@ -91,20 +169,59 @@ h1 {
   padding: 30px 40px;
   text-align: left;
   color: black;
+  line-height: 150%;
+  font-family: Open-Sans;
+  font-size: 16px
+}
+
+.centercard {
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+  background-color: white;
+  font-family: Bitter
+  color: black;
+  line-height: 150%;
+  word-spacing: 3px;
 }
 
 
 .about {
-  background: #eff8ff;
+  font-family: Open Sans;
+  font-size: 18px;
+  background: white;
   padding: 20px 20px;
   text-align: left;
   color: black;
-  
+  line-height: 150%;
 }
 
 
 .footer {
   padding: 20px; 
   text-align: left; 
-  background: #f1f1f1 
+  background: #fceeeb;
+}
+
+
+@media screen and (max-width: 600px) {
+  .nav a:not(:first-child) {display: none;}
+  .nav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav.responsive {position: relative;}
+  .nav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
