@@ -3,3 +3,12 @@
 
 // prints "hi" in the browser's dev tools console
 console.log("hi");
+
+function myFunction() {
+  var x = document.getElementById("MainNav");
+  if (x.className === "nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav";
+  }
+}

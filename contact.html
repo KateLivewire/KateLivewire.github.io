@@ -9,6 +9,8 @@
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
@@ -18,15 +20,18 @@
       <h1>Kate Livewire</h1>
     </div>
     
-      <div class="nav"> 
+      <div class="nav" id="MainNav"> 
           <a href="index.html">Home</a>
           <a href="about.html">About Me</a>
+          <a href="prose.html">Prose</a>
           <a href="poetry.html">Poetry</a>
-          <a href="stories.html">Stories</a>
           <a href="music.html">Music</a>
           <a href="games.html">Games</a>
           <a href="blog.html">Blog</a>
-          <a href="contact.html">Contact</a>
+          <a class="active" href="contact.html">Contact</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+          </a>
       </div>
     
       
