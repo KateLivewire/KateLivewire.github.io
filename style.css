@@ -62,7 +62,7 @@
 body {
   font-family: Bitter, Bitter-Italic;
   margin: 2em;
-  background-color: #fceeeb;
+  background-color: #FFEADB;
 }
 
 h1 {
@@ -136,14 +136,14 @@ h3 {
 
 .side {
   flex: 20%; 
-  background-color: #fceeeb; 
+  background-color: #FFEADB; 
   padding: 20px; 
 }
 
 
 .main {
   flex: 80%; 
-  background-color: #fceeeb; 
+  background-color: #FFEADB; 
   padding: 20px; 
 }
 
@@ -188,7 +188,7 @@ h3 {
 .about {
   font-family: Open Sans;
   font-size: 18px;
-  background: white;
+  background: #fffbf5;
   padding: 20px 20px;
   text-align: left;
   color: black;
@@ -197,11 +197,22 @@ h3 {
 
 
 .footer {
-  padding: 20px; 
+  padding: 10px 30px 12px 30px; 
   text-align: left; 
-  background: #fceeeb;
+  background: #fffbf5;
+  font-size: 12px;
 }
 
+.socialmediabutton {
+  padding: 20px; 
+  text-align: center; 
+  background: #fffbf5;
+}
+
+.column {
+  text-align: center;
+  flex: 100%;
+}
 
 @media screen and (max-width: 600px) {
   .nav a:not(:first-child) {display: none;}
