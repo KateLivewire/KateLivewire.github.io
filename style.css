@@ -142,11 +142,15 @@ h3 {
 
 
 .main {
-  flex: 80%; 
+  flex: 78%; 
   background-color: #FFEADB; 
   padding: 20px; 
 }
 
+.filler {
+  flex: 2%;
+  background-color: #FFEADB;
+}
 
 
 
@@ -209,9 +213,15 @@ h3 {
   background: #fffbf5;
 }
 
-.column {
+.imagethird {
   text-align: center;
-  flex: 100%;
+  flex: 33.33%;
+}
+
+.imagehalve {
+  text-align: center;
+  flex: 33.33%
+  
 }
 
 @media screen and (max-width: 600px) {
