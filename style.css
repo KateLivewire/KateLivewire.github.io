@@ -60,6 +60,8 @@
 
 
 body {
+  background-image: url("https://cdn.glitch.com/dac22bc7-c89a-41a1-9663-47afdbf17116%2FSin%20Lab%20Bottles%20(6).png?v=1614127609482");
+  background-repeat: repeat;
   font-family: Bitter, Bitter-Italic;
   margin: 2em;
   background-color: #FFEADB;
@@ -130,26 +132,27 @@ h3 {
 .row {
   display: flex;
   flex-wrap: wrap;
-  background-color: #fceeeb;
 }
 
 
 .side {
   flex: 20%; 
-  background-color: #FFEADB; 
   padding: 20px; 
 }
 
 
 .main {
-  flex: 78%; 
-  background-color: #FFEADB; 
+  flex: 68%; 
   padding: 20px; 
 }
 
 .filler {
-  flex: 2%;
-  background-color: #FFEADB;
+  flex: 4%;
+}
+
+.whitefiller {
+  flex: 4%;
+  background-color: white;
 }
 
 
@@ -201,7 +204,7 @@ h3 {
 
 
 .footer {
-  padding: 10px 30px 12px 30px; 
+    padding: 10px 30px 12px 30px; 
   text-align: left; 
   background: #fffbf5;
   font-size: 12px;
