@@ -78,20 +78,29 @@ h1 {
 h2 {
   font-size: 24px;
   font-family: Bitter, Bitter-Italic;
+  line-height: 150%;
 }
 
 h3 {
   font-family: Bitter-Light;
   font-size: 24px;
-  font-style: regular
+  font-style: regular;
+  color: #18b193;
   padding: 10px;
+}
+
+h4 {
+  font-size: 32px;
+  font-family: Bitter, Bitter-Italic;
+  line-height: 150%;
+  text-align: center;
 }
 
 
 .header {
   padding: 60px; 
   text-align: center; 
-  background: #1abc9c; 
+  background: #18b193; 
   color: white; 
 }
 
@@ -102,7 +111,7 @@ h3 {
 
 .nav a {
   float: left;
-  color: #1abc9c;
+  color: #18b193;
   text-align: center;
   padding: 14px 40px;
   text-decoration: none;
@@ -173,7 +182,7 @@ h3 {
 
 .card {
   background: white;
-  padding: 30px 40px;
+  padding: 30px 50px 30px 50px;
   text-align: left;
   color: black;
   line-height: 150%;
@@ -195,11 +204,23 @@ h3 {
 .about {
   font-family: Open Sans;
   font-size: 18px;
-  background: #fffbf5;
+  background: #effaf8;
   padding: 20px 20px;
   text-align: left;
   color: black;
   line-height: 150%;
+}
+
+.abouttitle {
+  flex: 45%;
+  text-align: left;
+  padding: 0px 0px 0px 0px;
+}
+
+.abouttext {
+  flex: 55%;
+  text-align: left;
+  padding: 20px 0px 0px 50px;
 }
 
 
