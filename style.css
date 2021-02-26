@@ -48,7 +48,11 @@
        url("https://cdn.glitch.com/dac22bc7-c89a-41a1-9663-47afdbf17116%2FRaleway.zip?v=1610963260990") format(ttf),
 }
 
-
+@font-face {
+  font-family: Mr-Dafoe; 
+  src: url("https://cdn.glitch.com/dac22bc7-c89a-41a1-9663-47afdbf17116%2FMrDafoe-Regular.ttf?v=1614304924408");
+       url("https://cdn.glitch.com/dac22bc7-c89a-41a1-9663-47afdbf17116%2FMrDafoe-Regular.ttf?v=1614304924408") format(ttf),
+}
 
  
 
@@ -68,9 +72,12 @@ body {
 }
 
 h1 {
-  font-family: Open-Sans;
-  font-size: 50px;
-  font-style: regular;
+  font-family: Mr-Dafoe;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 250;
+  letter-spacing: 2px;
+  word-spacing: 10px;
   color: #f1aa9b;
   background-color: white;
 }
@@ -90,7 +97,7 @@ h3 {
 }
 
 h4 {
-  font-size: 32px;
+  font-size: 31px;
   font-family: Bitter, Bitter-Italic;
   line-height: 150%;
   text-align: center;
@@ -102,6 +109,12 @@ h4 {
   text-align: center; 
   background: #18b193; 
   color: white; 
+}
+
+.headerimage {
+  flex: 100%;
+  background-color: white;
+  padding: 20px 0px 20px 0px;
 }
 
 .nav {
@@ -182,7 +195,7 @@ h4 {
 
 .card {
   background: white;
-  padding: 30px 50px 30px 50px;
+  padding: 20px 50px 40px 50px;
   text-align: left;
   color: black;
   line-height: 150%;
@@ -191,7 +204,7 @@ h4 {
 }
 
 .centercard {
-  padding: 20px 20px 20px 20px;
+  padding: 20px 30px 20px 30px;
   text-align: center;
   background-color: white;
   font-family: Bitter
@@ -214,13 +227,13 @@ h4 {
 .abouttitle {
   flex: 45%;
   text-align: left;
-  padding: 0px 0px 0px 0px;
+  padding: 0px 10px 0px 10px;
 }
 
 .abouttext {
   flex: 55%;
   text-align: left;
-  padding: 20px 0px 0px 50px;
+  padding: 20px 30px 0px 30px;
 }
 
 
@@ -231,20 +244,19 @@ h4 {
   font-size: 12px;
 }
 
-.socialmediabutton {
-  padding: 20px; 
-  text-align: center; 
-  background: #fffbf5;
-}
 
 .imagethird {
-  text-align: center;
-  flex: 33.33%;
+  width: 33.33%
+}
+
+.imagethird img {
+  width: auto;
+  height: 100%;
 }
 
 .imagehalve {
   text-align: center;
-  flex: 33.33%
+  fixed: 50%;
   
 }
 
