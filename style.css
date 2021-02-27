@@ -172,16 +172,16 @@ h4 {
   flex: 4%;
 }
 
-.whitefiller {
-  flex: 4%;
-  background-color: white;
+@media screen and (max-width: 800px) {
+  .side, .main, .filler {
+    width: 100%; 
+  }
 }
-
-
 
 @media screen and (max-width: 700px) {
   .row {
     flex-direction: column;
+    flex: 100%;
   }
 }
 
@@ -200,7 +200,7 @@ h4 {
   color: black;
   line-height: 150%;
   font-family: Open-Sans;
-  font-size: 16px
+  font-size: 16px;
 }
 
 .centercard {
@@ -212,7 +212,6 @@ h4 {
   line-height: 150%;
   word-spacing: 3px;
 }
-
 
 .about {
   font-family: Open Sans;
@@ -245,20 +244,105 @@ h4 {
 }
 
 
+
+
+
+/* IMAGE THIRDS */
+
 .imagethird {
-  width: 33.33%
+  float: left;
+  width: 33.33%;
+  padding: 5px;
 }
 
 .imagethird img {
-  width: auto;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
-.imagehalve {
-  text-align: center;
-  fixed: 50%;
-  
+@media screen and (max-width: 500px) {
+  .imagethird {
+    width: 100%;
+  }
 }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* IMAGE HALVES */
+
+.imagehalve {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.imagehalve img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 500px) {
+  .imagehalve {
+    width: 100%;
+  }
+}
+
+/* IMAGE FULL */
+  
+.imagefull {
+  float: left;
+  width: 100%;
+  padding: 5px;
+}
+
+.imagefull img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 500px) {
+  .imagefull {
+    width: 100%;
+  }
+}
+  
+/* END OF IMAGES */
+
+
+
+/* YOUTUBE */
+
+.youtube {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.youtube {
+	padding-bottom:56.25%;
+  height:0;
+  position:relative;
+	padding-top:30px;
+	overflow:hidden;
+}
+.youtube iframe, 
+.youtube object, 
+.youtube embed {
+	position:absolute;
+	left:0;
+  top:0;
+	width:100%;
+	height:100%;
+}
+
+/* END OF YOUTUBE */
+
+
+
 
 @media screen and (max-width: 600px) {
   .nav a:not(:first-child) {display: none;}
